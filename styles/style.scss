@@ -1,0 +1,30 @@
+
+/*SASS STYLE SHEET*/
+
+
+/*VARIABLES*/
+
+$header1: 2.4rem;
+$header2: 6rem;
+$text: 2rem;
+$textColor: #555;
+$specialColor: #ff523b;
+
+/*MIXINS*/
+
+@mixin flex($direction, $justify, $align) {
+    
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+
+/*IMPORTS*/
+
+
+@import "globals";
+@import "header";

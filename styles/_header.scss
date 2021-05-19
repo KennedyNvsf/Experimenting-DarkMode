@@ -1,0 +1,148 @@
+
+/*HEADER*/
+
+header{
+
+    background: #edf2fc;
+    
+}
+/*NAVBAR*/
+
+
+nav{
+
+    @include flex (row, space-around, center);
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    
+}
+
+#logo{
+
+    flex: 1;
+
+    img{
+
+        padding: 2rem;
+    }
+}
+
+.navLinks{
+
+    @include flex ( row, space-around, center);
+    list-style: none;
+
+    li{
+
+        margin-right: 5rem;
+
+        &:hover{
+
+            color: $specialColor;
+        }
+    }
+
+    a{
+        &:hover{
+
+            color: $specialColor;
+        }
+    }
+}
+
+
+
+
+/*****************************************************************************/
+
+
+/*INTRO SECTION*/
+
+.introSection{
+
+    width: 90%;
+    margin: auto;
+    @include flex (row, space-around, center);
+    min-height: 90vh;
+    position: relative;
+
+}
+
+.introText {
+
+   
+    flex: 1 1 40rem;
+
+    h2{
+        font-size: $header2;
+        margin: 5rem 0rem;
+        line-height: 6rem;
+    }
+
+    p{
+        font-size: $header1;
+        padding: 2rem 0rem;
+    }
+
+    span{
+
+        color: $specialColor;
+    }
+
+    .introBtn{
+        color: #fff;
+        background: #212121;
+        border-radius: 5px;
+        padding: 10px 18px;
+        display: inline-block;
+        margin: 30px 0px;
+    }
+}
+
+.socials{
+
+    a{
+        font-size: 3rem;
+        color: #606163;
+        margin-right: 2rem;
+        transition: all 3s ease-in-out;
+
+        &:hover i{
+
+            color: $specialColor;
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.introImage{
+
+    flex: 1 1 40rem;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    bottom: 0;
+    right: 100px;
+
+    img{
+
+        position: absolute;
+        height: 100%;
+        left: 70%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+
+    &:hover .backImage{
+
+        bottom: 20px;
+    }
+
+    &:hover .mainImage{
+
+        left: 64%;
+    }
+}
