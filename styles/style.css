@@ -1,5 +1,15 @@
 /*SASS STYLE SHEET*/
 /*VARIABLES*/
+:root {
+  --primaryColor: #edf2fc;
+  --secondaryColor: #212121;
+}
+
+.darkTheme {
+  --primaryColor: #000106;
+  --secondaryColor: #fff;
+}
+
 /*MIXINS*/
 /*IMPORTS*/
 /*GLOBAL VARIABLES*/
@@ -30,7 +40,7 @@ body {
 
 /*HEADER*/
 header {
-  background: #edf2fc;
+  background: var(--primaryColor);
 }
 
 /*NAVBAR*/
@@ -88,8 +98,17 @@ nav {
   color: #ff523b;
 }
 
+.navLinks a {
+  color: var(--secondaryColor);
+}
+
 .navLinks a:hover {
   color: #ff523b;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
 }
 
 /*****************************************************************************/
@@ -120,12 +139,14 @@ nav {
 }
 
 .introText h2 {
+  color: var(--secondaryColor);
   font-size: 6rem;
   margin: 5rem 0rem;
   line-height: 6rem;
 }
 
 .introText p {
+  color: var(--secondaryColor);
   font-size: 2.4rem;
   padding: 2rem 0rem;
 }
@@ -135,8 +156,8 @@ nav {
 }
 
 .introText .introBtn {
-  color: #fff;
-  background: #212121;
+  color: var(--primaryColor);
+  background: var(--secondaryColor);
   border-radius: 5px;
   padding: 10px 18px;
   display: inline-block;
@@ -145,7 +166,7 @@ nav {
 
 .socials a {
   font-size: 3rem;
-  color: #606163;
+  color: var(--secondaryColor);
   margin-right: 2rem;
   -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;

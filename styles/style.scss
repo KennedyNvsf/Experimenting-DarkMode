@@ -10,6 +10,21 @@ $text: 2rem;
 $textColor: #555;
 $specialColor: #ff523b;
 
+:root{
+
+    --primaryColor: #edf2fc;
+    --secondaryColor: #212121;
+
+   
+}
+
+
+.darkTheme{
+
+    --primaryColor: #000106;
+    --secondaryColor: #fff;
+
+}
 /*MIXINS*/
 
 @mixin flex($direction, $justify, $align) {
